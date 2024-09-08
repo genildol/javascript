@@ -1,33 +1,24 @@
-var fruits = [];
-var list = [];
+class Person {
 
-const fruitList = document.getElementById('fruit-list');
+  age = 0;
 
-function renderFruits() {
-  fruits.forEach(function (fruit, index) {
-
-    list += `<li id='fruit-${index}'>${fruit}</li>`;
-
-  });
-
-  fruitList.innerHTML = list;
-
-  list = '';
-
-}
-
-function addFruit(fruit) {
-
-  if (fruits[fruit] > 0) {
-
+  constructor(name) {
+    this.name = name;
   }
 
-  fruits.push(fruit);
-
-  renderFruits();
+  // constructor(name, age) {
+  //   this.name = name;
+  //   this.age = age;
 }
 
-addFruit('Abacate');
-addFruit('Limão');
-addFruit('Graviola');
-addFruit('Beterraba');
+
+let p1 = new Person("João");
+let p2 = new Person("Maria");
+let p3 = new Person("Pedro");
+
+
+p1.age = 20;
+
+console.log(`${p1.name} tem ${p1.age} anos`);
+
+// console.log(p3);
