@@ -8,7 +8,6 @@ class Person {
   //   this.name = name;
   // }
 
-
   // Segunda parte
 
   constructor(firstName, lastName) {
@@ -30,7 +29,6 @@ class Person {
   }
 
 }
-
 
 let p1 = new Person("João", "Silva");
 let p2 = new Person("Maria", "Leite");
